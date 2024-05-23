@@ -8,25 +8,46 @@ end
 
 local dashboard = require("alpha.themes.dashboard")
 dashboard.section.header.val = {
+---------------------------------------------------------------------------------------
+-- Text to ASCII Web Site
+-- https://patorjk.com/software/taag/#p=testall&h=1&f=3D%20Diagonal&t=WANLEI
+-- https://github.com/nvimdev/dashboard-nvim/wiki/Ascii-Header-Text
+---------------------------------------------------------------------------------------
 
-    [[          ▀████▀▄▄              ▄█ ]],
-    [[            █▀    ▀▀▄▄▄▄▄    ▄▄▀▀█ ]],
-    [[    ▄        █          ▀▀▀▀▄  ▄▀  ]],
-    [[   ▄▀ ▀▄      ▀▄              ▀▄▀  ]],
-    [[  ▄▀    █     █▀   ▄█▀▄      ▄█    ]],
-    [[  ▀▄     ▀▄  █     ▀██▀     ██▄█   ]],
-    [[   ▀▄    ▄▀ █   ▄██▄   ▄  ▄  ▀▀ █  ]],
-    [[    █  ▄▀  █    ▀██▀    ▀▀ ▀▀  ▄▀  ]],
-    [[   █   █  █      ▄▄           ▄▀  custom by WanLei ]],
+    -- [[          ▀████▀▄▄              ▄█ ]],
+    -- [[            █▀    ▀▀▄▄▄▄▄    ▄▄▀▀█ ]],
+    -- [[    ▄        █          ▀▀▀▀▄  ▄▀  ]],
+    -- [[   ▄▀ ▀▄      ▀▄              ▀▄▀  ]],
+    -- [[  ▄▀    █     █▀   ▄█▀▄      ▄█    ]],
+    -- [[  ▀▄     ▀▄  █     ▀██▀     ██▄█   ]],
+    -- [[   ▀▄    ▄▀ █   ▄██▄   ▄  ▄  ▀▀ █  ]],
+    -- [[    █  ▄▀  █    ▀██▀    ▀▀ ▀▀  ▄▀  ]],
+    -- [[   █   █  █      ▄▄           ▄▀  custom by WanLei ]],
+
+    [[      ___          ___          ___                       ___                 ]],
+    [[     /__/\        /  /\        /__/\                     /  /\       ___      ]],  
+    [[    _\_ \:\      /  /::\       \  \:\                   /  /:/_     /  /\     ]], 
+    [[   /__/\ \:\    /  /:/\:\       \  \:\   ___     ___   /  /:/ /\   /  /:/     ]], 
+    [[  _\_ \:\ \:\  /  /:/~/::\  _____\__\:\ /__/\   /  /\ /  /:/ /:/_ /__/::\     ]], 
+    [[ /__/\ \:\ \:\/__/:/ /:/\:\/__/::::::::\\  \:\ /  /://__/:/ /:/ /\\__\/\:\__  ]], 
+    [[ \  \:\ \:\/:/\  \:\/:/__\/\  \:\~~\~~\/ \  \:\  /:/ \  \:\/:/ /:/   \  \:\/\ ]], 
+    [[  \  \:\ \::/  \  \::/      \  \:\  ~~~   \  \:\/:/   \  \::/ /:/     \__\::/ ]], 
+    [[   \  \:\/:/    \  \:\       \  \:\        \  \::/     \  \:\/:/      /__/:/  ]], 
+    [[    \  \::/      \  \:\       \  \:\        \__\/       \  \::/       \__\/   ]], 
+    [[     \__\/        \__\/        \__\/                     \__\/                ]],
+    [[                                                                              ]],
+    [[                                                         —— custom by WanLei  ]],
+
 }
 
  dashboard.section.buttons.val = {
-   dashboard.button("f", "󰮗  Find file", ":Telescope find_files <CR>"),
    dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
+   dashboard.button("f", "󰮗  Find file", ":Telescope find_files <CR>"),
+   dashboard.button("q", "󰰚  Projects", ":Telescope projects<CR>"),
    dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
-   dashboard.button("t", "󰊄 Find text", ":Telescope live_grep <CR>"),
+   dashboard.button("t", "󰊄  Find text", ":Telescope live_grep <CR>"),
    dashboard.button("c", "  Configuration", ":e ~/AppData/Local/nvim/init.lua<CR>"),
-   dashboard.button("q", "󰿅 Quit Neovim", ":qa<CR>"),
+   dashboard.button("q", "󰿅  Quit Neovim", ":qa<CR>"),
 }
 
 local function footer()
