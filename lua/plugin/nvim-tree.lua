@@ -12,9 +12,14 @@ nvim_tree.setup({
 
     -- 隐藏 .文件 和 node_modules 文件夹
     filters = {
-        dotfiles = true,
-        custom = { 'node_modules' },
+        dotfiles = false,
+        custom = { 'node_modules', },
     },
+
+   update_focused_file = {
+     enable = true,
+     update_cwd = true,
+   },
 
     actions = {
         open_file = {
