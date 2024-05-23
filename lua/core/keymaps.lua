@@ -30,7 +30,7 @@ keymap.set("n", "<C-Q>"     , ":q<cr>")                                     -- �
 
 
 --- 插件相关 ---
-keymap.set("v", "<leader>a" , ":Tabularize /")                              -- 对齐
+keymap.set("v", "<leader>a" , ":Tabularize /")                              -- 对齐 + / 左对齐， r0右对齐
 keymap.set("n", "<C-_>"     , ":CommentToggle<CR>")                         -- 注释 Ctrl + /
 keymap.set("v", "<C-_>"     , ":CommentToggle<CR>")                         -- 注释
 keymap.set("i", "<C-_>"     , "<ESC>:CommentToggle<CR>i")                   -- 注释
@@ -57,10 +57,6 @@ keymap.set({"i", "v"}, "jk"     , "<ESC>")                                  -- K
 
 
 --- 其他 ---
-keymap.set("n", "<F5>"          , ":!python %<cr>")                         -- 运行当前的Python文件
-keymap.set("n", "so"            , ":so %<cr>")                              -- source find
-
-
---- Terminal ---
-keymap.set({"i","v","n"},"<C-A-t>", "<ESC>:10 split | terminal<CR><C-W>J | i")  -- create window and open teriminal
-
+keymap.set("n", "<F5>"          , ":!python %<cr>")                            -- 运行当前的Python文件
+keymap.set("n", "so"            , ":so %<cr>")                                 -- source find
+keymap.set({"i","v","n"},"<C-A-t>", "<ESC>:10 split | terminal<CR><C-W>J | i") -- 打开终端 
