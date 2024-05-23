@@ -12,6 +12,7 @@ wk.register({
         b = {"Buffers"},
         h = {"Help tags"},
         g = {"Live Grep"},
+        p = {"Projects"}
     },
 
     m = {
