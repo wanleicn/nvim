@@ -4,7 +4,6 @@
   "bufferline.nvim": { "branch": "main", "commit": "eba37af2699143efe7a8b1ffc57bf31756b73100" },
   "coc.nvim": { "branch": "master", "commit": "5c3bdc07937ef5591e5abf3dfbd765fb905c452d" },
   "colorful-winsep.nvim": { "branch": "alpha", "commit": "b0b76a8b19074920d2cb6878bf356cfb8af617a5" },
-  "fzf-lua": { "branch": "main", "commit": "a9e5755721c0f24cd1635ea4ff181df5b1bd5dd4" },
   "gitsigns.nvim": { "branch": "main", "commit": "805610a9393fa231f2c2b49cb521bfa413fadb3d" },
   "gruvbox.nvim": { "branch": "main", "commit": "96a8ec336fb48a11cefbd57508888361431aac26" },
   "lazy.nvim": { "branch": "main", "commit": "9895337d1f4c0cea1186d92148e3d80f6551eda8" },
@@ -22,9 +21,9 @@
   "tabular": { "branch": "master", "commit": "339091ac4dd1f17e225fe7d57b48aff55f99b23a" },
   "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" },
   "theme-vim": { "branch": "main", "commit": "558d365d2678b5efa661310cc3b991486dcc78df" },
+  "tokyonight.nvim": { "branch": "main", "commit": "b9b494fa7f7bbf2fe0747b47fa290fb7a4eddcc7" },
   "verilog_systemverilog.vim": { "branch": "master", "commit": "74e533b5f8f169af86af27d7206814103b35efcb" },
   "vim": { "branch": "main", "commit": "d0ce0502c83864721c92d0723dde10f38a09c714" },
-  "vim-multiple-cursors": { "branch": "master", "commit": "6456718e1d30b42c04b920c5413ca44f68f08759" },
   "vscode.nvim": { "branch": "main", "commit": "ff3926901d4160886f707a8a70b5c2e82979a7c4" },
   "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
 }

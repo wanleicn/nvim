@@ -23,7 +23,7 @@ require("lazy").setup({
     "tanvirtin/monokai.nvim",
     "hardhackerlabs/theme-vim",
     "Mofiqul/vscode.nvim",
-
+    'folke/tokyonight.nvim',
     -- 让Neovim背景变透明，如果你需要透明的UI或者模糊背景的效果，就需要用上这个插件
     -- { "xiyaowong/nvim-transparent" },
     
@@ -122,6 +122,7 @@ require("lazy").setup({
         'goolord/alpha-nvim',
          config = function ()
             require'alpha'.setup(require'alpha.themes.dashboard'.config)
+            -- require'alpha'.setup(require'alpha.themes.startify'.config)
          end
     },
 
