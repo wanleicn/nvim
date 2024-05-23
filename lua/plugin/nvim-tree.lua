@@ -18,8 +18,9 @@ nvim_tree.setup({
 
    update_focused_file = {
      enable = true,
-     update_cwd = true,
-   },
+    -- 目录跟随文件的变化而变化
+     update_cwd = true, 
+ },
 
     actions = {
         open_file = {

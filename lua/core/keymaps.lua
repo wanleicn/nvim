@@ -43,6 +43,7 @@ keymap.set("n", "ff"        , ":Telescope find_files<cr>")                  -- T
 keymap.set("n", "fg"        , ":Telescope live_grep<cr>")                   -- Telescope 查找文件
 keymap.set("n", "fb"        , ":Telescope buffers<cr>")                     -- Telescope 查找Buffer
 keymap.set("n", "fh"        , ":Telescope help_tags<cr>")                   -- Telescope 查找帮助文件
+keymap.set("n", "fp"        , ":Telescope projects<cr>")                    -- Telescope 打开工程
 
 
 

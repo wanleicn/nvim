@@ -42,9 +42,6 @@ require("lazy").setup({
       dependencies = {
         "nvim-tree/nvim-web-devicons",
       },
-      config = function()
-        require("nvim-tree").setup {}
-      end
     },
     -- Buffer（文件）Tab 显示插件
     {
@@ -153,7 +150,8 @@ require("lazy").setup({
 
     -- 'terryma/vim-multiple-cursors', -- 多行编辑
 
-
+    -- 项目管理
+   'ahmedkhalf/project.nvim', 
     -----------------------------------------------------
     -- LSP for verilog,
     "neovim/nvim-lspconfig",
