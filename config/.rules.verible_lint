@@ -1,1 +1,4 @@
 -no-trailing-spaces
+-line-length
+-no-tabs
+-always-combs

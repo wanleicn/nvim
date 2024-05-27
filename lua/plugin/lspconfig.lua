@@ -29,6 +29,7 @@
         -- For example, a handler override for the `rust_analyzer`:
         ["verible"] = function ()
             lspconfig.verible.setup{
+             --.rules.verible_lint is config file for verible 
               cmd = {'verible-verilog-ls', "--rules_config=C:/Users/Ray/AppData/Local/nvim/config/.rules.verible_lint"},
                 root_dir = function(fname)
                     return lspconfig.util.root_pattern(".git")(fname) or lspconfig.util.path.dirname(fname)
@@ -77,7 +78,7 @@
 --         -- 启用补全触发
 --         buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 --         -- 绑定快捷键
---         -- local opts = { noremap=true, silent=true }
+
 --         -- buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
 --         -- buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
 --         -- buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
