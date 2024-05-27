@@ -52,6 +52,7 @@ require("lazy").setup({
     },
 
     -- 代码语法高亮，支持多种语言
+    ---- 需要GCC
     { "nvim-treesitter/nvim-treesitter" },
 
     -- 平滑滚动插件
@@ -100,7 +101,7 @@ require("lazy").setup({
         end
     },
 
-    "vhda/verilog_systemverilog.vim",
+    -- "vhda/verilog_systemverilog.vim",
 
     "tomasky/bookmarks.nvim",     -- 书签
     
@@ -153,7 +154,39 @@ require("lazy").setup({
     -- 项目管理
    'ahmedkhalf/project.nvim', 
     -----------------------------------------------------
-    -- LSP for verilog,
-    "neovim/nvim-lspconfig",
-    'neoclide/coc.nvim',
-})
+    -- LSP
+    -----------------------------------------------------
+    {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
+    },
+    -- 'neoclide/coc.nvim',
+    --
+    -- 补全
+-- nvim-cmp
+      'hrsh7th/cmp-nvim-lsp', -- { name = nvim_lsp }
+      'hrsh7th/cmp-buffer',   -- { name = 'buffer' },
+      'hrsh7th/cmp-path',     -- { name = 'path' }
+      'hrsh7th/cmp-cmdline',  -- { name = 'cmdline' }
+      'hrsh7th/nvim-cmp',
+-- vsnip
+      -- 'hrsh7th/cmp-vsnip',    -- { name = 'vsnip' }
+      -- 'hrsh7th/vim-vsnip',
+      -- 'rafamadriz/friendly-snippets',
+-- lspkind 补全图标插件
+      'onsails/lspkind-nvim', 
+
+      {
+          'nvimdev/lspsaga.nvim',
+          config = function()
+              require('lspsaga').setup({})
+          end,
+          dependencies = {
+              'nvim-treesitter/nvim-treesitter', -- optional
+              'nvim-tree/nvim-web-devicons',     -- optional
+          }
+      },
+
+
+  })

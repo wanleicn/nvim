@@ -21,7 +21,7 @@ keymap.set("n", "<leader>sh", "<C-w>s")                                     -- �
 keymap.set("n", "wc"        , ":close<cr>")                                 -- 关闭当前窗口
 keymap.set("n", "ww"        , "<C-w>w")                                     -- 切换窗口焦点
 keymap.set("n", "<Space>"   , ":bn<cr>")                                    -- 切换当前Buffer
-keymap.set("n", "<TAB>d"    , ":bd<cr>")                                    -- 关闭当前Buffer
+keymap.set("n", "<TAB>d"    , ":bd<cr>:bn<cr>")                             -- 关闭当前Buffer
 keymap.set("n", "<C-z>"     , "<ESC>:u<CR>")                                -- 撤销
 keymap.set("n", "<C-a>"     , "ggVG")                                       -- 全选
 keymap.set("n", "nh"        , ":nohl<CR>")                                  -- 取消高亮
@@ -59,4 +59,4 @@ keymap.set({"i", "v"}, "jk"     , "<ESC>")                                  -- K
 --- 其他 ---
 keymap.set("n", "<F5>"          , ":!python %<cr>")                            -- 运行当前的Python文件
 keymap.set("n", "so"            , ":so %<cr>")                                 -- source find
-keymap.set({"i","v","n"},"<C-A-t>", "<ESC>:10 split | terminal<CR><C-W>J | i") -- 打开终端 
+keymap.set({"i","v","n"},"<C-A-t>", "<ESC>:10 split | terminal<CR><C-W>J | i") -- 打开终端
